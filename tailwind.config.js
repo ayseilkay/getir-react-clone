@@ -4,11 +4,17 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      spacing:{
+        '0.1':'0.063rem'
+      },
       colors:{
         'brand-color': "#4c3398",
         'primary-brand-color': "#5d3ebc",
         'secondary-brand-color': "#7849f7",
-        'primary-button-color':"#ffd300"
+        'primary-button-color':"#ffd300",
+        'purple-light':"#dbdbff",
+        'color-gray':'#697488',
+        'color-black':'#191919'
       }
     },
   },

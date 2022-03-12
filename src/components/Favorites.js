@@ -1,8 +1,27 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import Title from './ui/Title'
+import Products from 'api/products.json'
+import Product from './ui/Product';
 
 function Favorites() {
+
+  const [products,setProduct]= useState([]);
+
+  useEffect(()=>{
+    setProduct(Products);
+  },[])
   return (
-    <div>Favorites</div>
+    <div className='container mx-auto'> 
+      <Title>Favoriler</Title>
+      <div className='grid grid-cols-5 gap-0.1  rounded-lg overflow-hidden'>
+        {products.length && products.map((product,index)=>(
+          <div>
+            <Product key={index} product={product}/>
+          </div>
+        )
+        )}
+      </div>
+    </div>
   )
 }
 
