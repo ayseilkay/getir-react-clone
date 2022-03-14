@@ -20,3 +20,6 @@
 .flag-select{
     @apply !pb-0
 }
+.ReactCollapse--collapse{
+    @apply transition-all
+}

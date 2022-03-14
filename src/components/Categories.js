@@ -17,7 +17,7 @@ function Categories() {
     <div className='bg-white py-6'>
       <div className='container mx-auto'>
         <Title children="Kategoriler"/>
-        <div className='grid grid-cols-10'>
+        <div className='grid grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-9 2xl:grid-cols-10 '>
           {/* {!categories.length && 'Yükleniyor...'} */}
             {
               categories && categories.map((category,index)=><Category key={index} category={category}/>)
