@@ -8,7 +8,7 @@ function Product({product:{id,title,image,alt,price}}) {
         </div>
         <img src={image} alt={title}/>
         <div className='font-semibold text-sm text-brand-color'>{'₺'}{price}</div>
-        <div className='text-color-black font-semibold whitespace-nowrap'>{title}</div>
+        <div className='text-color-black font-semibold'>{title}</div>
         <div className='text-sm text-color-gray tracking-tight'>{alt}</div>
     </div>
   )
